@@ -29,15 +29,20 @@ Tema: @android:style/Theme.Material.Light.NoActionBar
 Sem AppCompat / Sem Compose
 
 📁 Estrutura (essencial)
-app/src/main/
-├─ AndroidManifest.xml
-├─ java/com/example/ciclodevidaapp/
-│  ├─ MainActivity.kt
-│  └─ SecondActivity.kt
-└─ res/
-   ├─ layout/
-   │  ├─ activity_main.xml
-   │  └─ activity_second.xml
-   └─ values/
-      ├─ strings.xml
-      └─ styles.xml
+app/
+└─ src/
+   └─ main/
+      ├─ AndroidManifest.xml
+      ├─ java/
+      │  └─ com/
+      │     └─ example/
+      │        └─ ciclodevidaapp/
+      │           ├─ MainActivity.kt
+      │           └─ SecondActivity.kt
+      └─ res/
+         ├─ layout/
+         │  ├─ activity_main.xml
+         │  └─ activity_second.xml
+         └─ values/
+            ├─ strings.xml
+            └─ styles.xml
