@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ciclo de Vida</string>
+    <string name="tela1_titulo">Tela 1 - MainActivity</string>
+    <string name="tela2_titulo">Tela 2 - SecondActivity</string>
+    <string name="ir_para_segunda">Ir para a Segunda Tela</string>
+    <string name="voltar">Voltar</string>
+</resources>
