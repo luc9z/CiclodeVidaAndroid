@@ -1,44 +1,44 @@
-Ciclo de Vida — Android (Kotlin, XML)
+Aqui está o **README.md** revisado, organizado e pronto para colar:
 
-Projeto exemplo com duas Activities usando layouts em XML (sem AppCompat) para demonstrar as chamadas do ciclo de vida no Logcat.
+---
 
-✅ Objetivo
+# Ciclo de Vida — Android (Kotlin, XML)
 
-Observar no Logcat a sequência real dos métodos:
-onCreate, onStart, onResume, onPause, onStop, onRestart, onDestroy
-ao:
+Projeto exemplo com **duas Activities** usando **layouts em XML** (**sem AppCompat / sem Compose**) para demonstrar as **chamadas do ciclo de vida** no Logcat.
 
-Abrir o app
+## ✅ Objetivo
 
-Navegar entre telas
+Observar no **Logcat** a sequência real dos métodos:
 
-Minimizar e voltar
+* `onCreate`, `onStart`, `onResume`
+* `onPause`, `onStop`, `onRestart`, `onDestroy`
 
-Fechar o app
+Cenários a testar:
 
-🧱 Tecnologias
+* Abrir o app
+* Navegar entre telas
+* Minimizar e voltar
+* Fechar o app
 
-Kotlin
+## 🧱 Tecnologias
 
-Activities do framework (android.app.Activity)
+* **Kotlin**
+* **Activities do framework** (`android.app.Activity`)
+* **XML layouts**
+* **Tema:** `@android:style/Theme.Material.Light.NoActionBar`
+* **Sem AppCompat / Sem Compose**
 
-XML layouts
+## 📁 Estrutura do projeto
 
-Tema: @android:style/Theme.Material.Light.NoActionBar
-
-Sem AppCompat / Sem Compose
-
-📁 Estrutura (essencial)
+```text
 app/
 └─ src/
    └─ main/
       ├─ AndroidManifest.xml
       ├─ java/
-      │  └─ com/
-      │     └─ example/
-      │        └─ ciclodevidaapp/
-      │           ├─ MainActivity.kt
-      │           └─ SecondActivity.kt
+      │  └─ com/example/ciclodevidaapp/
+      │     ├─ MainActivity.kt
+      │     └─ SecondActivity.kt
       └─ res/
          ├─ layout/
          │  ├─ activity_main.xml
@@ -46,3 +46,20 @@ app/
          └─ values/
             ├─ strings.xml
             └─ styles.xml
+```
+
+## ▶️ Como executar
+
+1. Abra o projeto no **Android Studio**.
+2. Selecione um **emulador** ou **dispositivo físico** (USB com depuração).
+3. Clique em **Run** (▶️).
+
+## 🔎 Onde ver as chamadas (Logcat)
+
+1. **View → Tool Windows → Logcat** (atalho: `Alt+6`).
+2. Selecione o **dispositivo** e marque **Show only selected application**.
+3. Filtros sugeridos:
+
+   * Por TAG: `tag:MainActivity` ou `tag:SecondActivity`
+   * Para ambas (Regex): habilite *Regex* e use `tag:(MainActivity|SecondActivity)`
+4. Nível: **Info**.
