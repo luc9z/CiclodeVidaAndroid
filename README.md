@@ -1,5 +1,3 @@
-Aqui está o **README.md** revisado, organizado e pronto para colar:
-
 ---
 
 # Ciclo de Vida — Android (Kotlin, XML)
