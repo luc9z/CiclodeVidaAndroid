@@ -1,10 +1,14 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ciclodevidaapp">
+
     <application
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
+        <!-- MainActivity - Primeira Tela -->
         <activity
-            android:name=".MainActivity"
+            android:name=".PerfilActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -12,8 +16,20 @@
             </intent-filter>
         </activity>
 
+        <!-- EnderecoActivity - Segunda Tela -->
         <activity
-            android:name=".SecondActivity"
+            android:name=".EnderecoActivity"
             android:exported="false"/>
+
+        <!-- PreferenciasActivity - Terceira Tela -->
+        <activity
+            android:name=".PreferenciasActivity"
+            android:exported="false"/>
+
+        <!-- ResumoActivity - Quarta Tela -->
+        <activity
+            android:name=".ResumoActivity"
+            android:exported="false"/>
+
     </application>
 </manifest>
